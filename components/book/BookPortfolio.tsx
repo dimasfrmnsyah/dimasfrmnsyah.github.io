@@ -53,7 +53,9 @@ export function BookPortfolio() {
       ? `${currentPage}-${Math.min(currentPage + 1, MAX_PAGES)}`
       : `${currentPage}`;
 
-  const canNext = currentPage < MAX_PAGES;
+  const canNext = isSpread
+    ? currentPage < MAX_PAGES - 1
+    : currentPage < MAX_PAGES;
   const canPrev = currentPage > 1;
 
   useEffect(() => {
