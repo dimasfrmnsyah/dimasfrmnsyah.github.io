@@ -29,3 +29,4 @@ Update your content in:
 - `data/stats.ts`
 
 Replace assets in `public/images` and update `public/cv.pdf` with your real CV.
+# dimasfrmnsyh.github.io
