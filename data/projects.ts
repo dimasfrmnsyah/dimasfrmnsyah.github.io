@@ -2,6 +2,43 @@ import type { Project } from "@/lib/types";
 
 export const projects: Project[] = [
   {
+    id: "sip3pl",
+    title: "REST SIP3PL",
+    description:
+      "REST API for Android and web applications that enables field attendance and progress reporting.",
+    role: "Backend Developer",
+    stack: ["Node.js", "PostgreSQL", "REST API"],
+    features: [
+      "Location-based attendance",
+      "Work progress reporting",
+      "Web & mobile access",
+      "Android app integration"
+    ],
+    image: "/images/projects/sip3pl.jpg",
+    imageClassName: "object-contain bg-zinc-950/40",
+    category: "Government",
+    links: {},
+    highlights: ["Dinas Perumahan Sumedang"]
+  },
+  {
+    id: "baresto",
+    title: "BARESTO POS",
+    description:
+      "REST APIs for an F&B POS application covering orders, sales reporting, and inventory.",
+    role: "Backend Developer",
+    stack: ["Node.js", "REST API"],
+    features: [
+      "Order management",
+      "Sales reporting",
+      "Ingredient inventory",
+      "Access for staff and customers"
+    ],
+    image: "/images/projects/baresto3.png",
+    category: "POS",
+    links: {},
+    highlights: ["F&B Operations"]
+  },
+  {
     id: "carcirus",
     title: "Carcirus Car Rental",
     description:
@@ -16,8 +53,28 @@ export const projects: Project[] = [
     ],
     image: "/images/projects/carcirus.jpeg",
     category: "Mobility",
-    links: {},
+    links: {
+      demo: "https://carcirus.com"
+    },
     highlights: ["California car rental"]
+  },
+  {
+    id: "meeting-arrenger",
+    title: "Meeting Arrenger & Guest Book",
+    description:
+      "Web app for Bappeda Sumedang: daily activities schedule and a guest book with device notifications.",
+    role: "Backend & Web Developer",
+    stack: ["PHP", "CodeIgniter 3", "MySQL"],
+    features: [
+      "Digital guest book",
+      "Meeting notifications to smartphones",
+      "Activity scheduling",
+      "Admin panel"
+    ],
+    image: "/images/projects/meeting.png",
+    category: "Government",
+    links: {},
+    highlights: ["Bappeda Sumedang"]
   },
   {
     id: "cms-bappeda",
@@ -35,15 +92,13 @@ export const projects: Project[] = [
     image: "/images/projects/cms-bappeda.png",
     category: "CMS",
     links: {
-      demo: "https://example.com"
     },
     highlights: ["Government CMS"]
   },
   {
     id: "cms-bpkad",
     title: "CMS BPKAD Sumedang",
-    description:
-      "CMS for managing content at BPKAD Kabupaten Sumedang.",
+    description: "CMS for managing content at BPKAD Kabupaten Sumedang.",
     role: "Backend & Web Developer",
     stack: ["PHP", "CodeIgniter 3", "MySQL"],
     features: [
@@ -55,9 +110,26 @@ export const projects: Project[] = [
     image: "/images/projects/bpkad.png",
     category: "CMS",
     links: {
-      demo: "https://example.com"
     },
     highlights: ["BPKAD Sumedang"]
+  },
+  {
+    id: "pusjatan",
+    title: "Material Construction Pusjatan",
+    description:
+      "Web app and mobile API to find nearby suppliers and inspect equipment.",
+    role: "Backend & Web Developer",
+    stack: ["PHP", "CodeIgniter 4", "REST API"],
+    features: [
+      "Nearest supplier search",
+      "Construction equipment inspection",
+      "Material management",
+      "Monitoring dashboard"
+    ],
+    image: "/images/projects/pusjatan.png",
+    category: "Infrastructure",
+    links: {},
+    highlights: ["Pusjatan Bandung"]
   },
   {
     id: "karlo-api",
