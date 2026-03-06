@@ -65,7 +65,7 @@ export function Hero() {
                 href="/book"
                 className="inline-flex items-center gap-2 rounded-full border border-border/10 bg-panel/70 px-6 py-3 text-sm font-semibold text-foreground transition hover:border-cyan-400/40"
               >
-                Open Book
+                Research Book
                 <BookOpen className="h-4 w-4" />
               </Link>
             </motion.div>
