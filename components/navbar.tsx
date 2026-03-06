@@ -1,6 +1,4 @@
 "use client";
-
-import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import {
   AnimatePresence,
@@ -55,7 +53,7 @@ export function Navbar() {
       )}
     >
       <Container className="flex h-16 items-center justify-between">
-        <Link
+        <a
           href="#home"
           onClick={() => setActiveId("home")}
           className="flex items-center gap-3 text-sm font-semibold tracking-[0.2em] text-foreground"
@@ -66,7 +64,7 @@ export function Navbar() {
           <span className="hidden text-xs uppercase text-foreground/70 sm:inline">
             Dimas Firmansyah
           </span>
-        </Link>
+        </a>
 
         <nav className="hidden lg:flex items-center gap-6">
           <LayoutGroup>
@@ -74,7 +72,7 @@ export function Navbar() {
               const id = item.href.replace("#", "");
               const isActive = activeId === id;
               return (
-                <Link
+                <a
                   key={item.href}
                   href={item.href}
                   onClick={() => setActiveId(id)}
@@ -91,7 +89,7 @@ export function Navbar() {
                       className="absolute -bottom-2 left-0 h-[2px] w-full rounded-full bg-gradient-to-r from-cyan-300 via-sky-400 to-blue-500"
                     />
                   ) : null}
-                </Link>
+                </a>
               );
             })}
           </LayoutGroup>
@@ -99,12 +97,12 @@ export function Navbar() {
 
         <div className="flex items-center gap-3">
           <ThemeToggle />
-          <Link
+          <a
             href="#contact"
             className="hidden items-center rounded-full border border-border/10 bg-panel/70 px-4 py-2 text-xs font-semibold uppercase tracking-widest text-foreground transition hover:border-cyan-400/50 hover:text-cyan-200 md:flex"
           >
             Let&apos;s Talk
-          </Link>
+          </a>
           <button
             onClick={() => setOpen(true)}
             className="flex h-9 w-9 items-center justify-center rounded-full border border-border/10 bg-panel/70 text-foreground transition hover:border-cyan-400/50 lg:hidden"
@@ -150,7 +148,7 @@ export function Navbar() {
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ delay: index * 0.05 }}
                       >
-                        <Link
+                        <a
                           href={item.href}
                           onClick={() => {
                             setActiveId(id);
@@ -163,7 +161,7 @@ export function Navbar() {
                         >
                           {item.label}
                           <span className="text-xs text-foreground/40">0{index + 1}</span>
-                        </Link>
+                        </a>
                       </motion.div>
                     );
                   })}

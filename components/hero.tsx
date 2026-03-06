@@ -52,13 +52,13 @@ export function Hero() {
 
           <motion.div variants={fadeUp} className="flex flex-wrap gap-3">
             <motion.div whileHover={{ y: -2 }} whileTap={{ scale: 0.98 }}>
-              <Link
+              <a
                 href="#projects"
                 className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-zinc-900 shadow-glow transition"
               >
                 View Projects
                 <ArrowDown className="h-4 w-4" />
-              </Link>
+              </a>
             </motion.div>
             <motion.div whileHover={{ y: -2 }} whileTap={{ scale: 0.98 }}>
               <Link
@@ -70,13 +70,13 @@ export function Hero() {
               </Link>
             </motion.div>
             <motion.div whileHover={{ y: -2 }} whileTap={{ scale: 0.98 }}>
-              <Link
+              <a
                 href="#contact"
                 className="inline-flex items-center gap-2 rounded-full border border-border/10 bg-panel/70 px-6 py-3 text-sm font-semibold text-foreground transition hover:border-cyan-400/40"
               >
                 Contact Me
                 <Mail className="h-4 w-4" />
-              </Link>
+              </a>
             </motion.div>
           </motion.div>
 
