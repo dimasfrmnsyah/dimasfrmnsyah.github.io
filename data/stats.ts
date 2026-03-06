@@ -13,8 +13,8 @@ export const stats: Stat[] = [
   },
   {
     label: "Core Stack",
-    value: "PHP · Node.js",
-    description: "Laravel, CodeIgniter, Express"
+    value: "PHP · Node.js · Python",
+    description: "Laravel, Golang, Express"
   },
   {
     label: "Education",
