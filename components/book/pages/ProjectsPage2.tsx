@@ -3,7 +3,7 @@
 import { bookPortfolio } from "@/data/book-portfolio";
 
 export function ProjectsPage2() {
-  const publications = bookPortfolio.publications.slice(3, 6);
+  const publications = bookPortfolio.publications.slice(4, 7);
 
   return (
     <div className="flex flex-col gap-3">
@@ -21,6 +21,16 @@ export function ProjectsPage2() {
             <h3 className="text-xs md:text-sm text-retro-teal mb-1">
               {item.title}
             </h3>
+            {item.authors ? (
+              <p className="text-[9px] md:text-[10px] text-retro-ink/70 mb-1">
+                {item.authors}
+              </p>
+            ) : null}
+            {item.affiliations ? (
+              <p className="text-[8px] md:text-[9px] text-retro-ink/60 mb-2">
+                {item.affiliations}
+              </p>
+            ) : null}
             <p className="text-[9px] md:text-[10px] text-retro-ink/70 mb-2">
               {item.venue} · {item.year}
             </p>

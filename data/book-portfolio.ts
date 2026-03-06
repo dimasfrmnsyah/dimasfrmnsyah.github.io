@@ -6,6 +6,8 @@ export interface BookPublication {
   medium: "Online" | "Offline";
   year: string;
   venue: string;
+  authors?: string;
+  affiliations?: string;
   description: string;
   keywords: string[];
   link?: string;
@@ -135,8 +137,11 @@ export const bookPortfolio = {
       medium: "Online",
       year: "n.d.",
       venue: "UGM FMIPA Publication",
+      authors: "Aina Musdholifah, Dimas Firmansyah",
+      affiliations:
+        "FMIPA UGM · Dept. of Computer Science & Electronics / MCS Program",
       description:
-        "Decision support system for logistics fleet assignment that combines AHP for criteria weighting, ELECTRE for alternative filtering, and TOPSIS for final ranking. Evaluation shows improvements in decision efficiency, recommendation accuracy, and business impact.",
+        "DSS for fleet assignment that integrates AHP for criteria weights, ELECTRE for alternative filtering, and TOPSIS for final ranking to reduce manual effort, improve recommendation accuracy, and optimize fleet utilization.",
       keywords: [
         "DSS",
         "AHP",
