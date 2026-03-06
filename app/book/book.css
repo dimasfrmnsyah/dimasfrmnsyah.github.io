@@ -1,0 +1,63 @@
+.book-theme {
+  --retro-ink: 43 31 26;
+  --retro-paper: 246 230 198;
+  --retro-paper-deep: 233 211 167;
+  --retro-brick: 200 90 74;
+  --retro-teal: 47 154 154;
+  --retro-mint: 126 209 193;
+  --retro-sky: 188 217 240;
+  --retro-gold: 232 178 77;
+
+  color: rgb(var(--retro-ink));
+  font-family: var(--font-book), "Courier New", monospace;
+}
+
+.pixel-grid {
+  background-image:
+    linear-gradient(
+      0deg,
+      transparent 23%,
+      rgba(0, 0, 0, 0.06) 24%,
+      rgba(0, 0, 0, 0.06) 25%,
+      transparent 26%,
+      transparent 74%,
+      rgba(0, 0, 0, 0.06) 75%,
+      rgba(0, 0, 0, 0.06) 76%,
+      transparent 77%,
+      transparent
+    ),
+    linear-gradient(
+      90deg,
+      transparent 23%,
+      rgba(0, 0, 0, 0.06) 24%,
+      rgba(0, 0, 0, 0.06) 25%,
+      transparent 26%,
+      transparent 74%,
+      rgba(0, 0, 0, 0.06) 75%,
+      rgba(0, 0, 0, 0.06) 76%,
+      transparent 77%,
+      transparent
+    );
+  background-size: 32px 32px;
+}
+
+.turn-book {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.turn-book .turn-page {
+  width: 100%;
+  height: 100%;
+}
+
+.turn-book.is-turning .turn-page {
+  filter: brightness(0.98);
+}
+
+.turn-book .hard {
+  box-shadow:
+    inset 0 0 0 3px rgba(43, 31, 26, 0.45),
+    0 0 0 2px rgba(43, 31, 26, 0.35);
+}

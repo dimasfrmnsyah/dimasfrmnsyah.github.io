@@ -1,0 +1,18 @@
+<svg width="800" height="520" viewBox="0 0 800 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="520" rx="32" fill="url(#g4)"/>
+  <rect x="70" y="80" width="320" height="150" rx="20" fill="rgba(255,255,255,0.1)"/>
+  <rect x="70" y="250" width="660" height="200" rx="24" fill="rgba(255,255,255,0.08)"/>
+  <circle cx="640" cy="120" r="95" fill="url(#c4)"/>
+  <text x="100" y="140" fill="white" font-family="Arial" font-size="20" font-weight="600" opacity="0.85">Atlas AI Ops</text>
+  <text x="100" y="168" fill="white" font-family="Arial" font-size="14" opacity="0.6">Agent orchestration</text>
+  <defs>
+    <linearGradient id="g4" x1="0" y1="0" x2="800" y2="520" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#111827"/>
+      <stop offset="1" stop-color="#0F172A"/>
+    </linearGradient>
+    <radialGradient id="c4" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(640 120) rotate(90) scale(95)">
+      <stop stop-color="#F472B6" stop-opacity="0.6"/>
+      <stop offset="1" stop-color="#F472B6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+</svg>

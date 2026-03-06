@@ -1,0 +1,33 @@
+{
+  "name": "premium-portfolio",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "clsx": "^2.1.0",
+    "framer-motion": "^11.0.0",
+    "lucide-react": "^0.460.0",
+    "next": "latest",
+    "next-themes": "^0.3.0",
+    "react": "latest",
+    "react-dom": "latest",
+    "tailwind-merge": "^2.5.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.7",
+    "@types/node": "^20.11.0",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "autoprefixer": "^10.4.18",
+    "eslint": "^9.0.0",
+    "eslint-config-next": "latest",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.12",
+    "typescript": "^5.5.4"
+  }
+}
