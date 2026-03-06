@@ -93,6 +93,28 @@ export const bookPortfolio = {
       ]
     },
     {
+      id: 7,
+      title:
+        "A Decision Support System for Fleet Selection Using AHP, TOPSIS, and ELECTRE",
+      type: "Journal Article",
+      status: "Published",
+      medium: "Online",
+      year: "n.d.",
+      venue: "UGM FMIPA Publication",
+      authors: "Aina Musdholifah, Dimas Firmansyah",
+      affiliations:
+        "FMIPA UGM · Dept. of Computer Science & Electronics / MCS Program",
+      description:
+        "DSS for fleet assignment that integrates AHP for criteria weights, ELECTRE for alternative filtering, and TOPSIS for final ranking to reduce manual effort, improve recommendation accuracy, and optimize fleet utilization.",
+      keywords: [
+        "DSS",
+        "AHP",
+        "ELECTRE",
+        "TOPSIS",
+        "Fleet Management"
+      ]
+    },
+    {
       id: 5,
       title: "Shrimp Farm Harvest Yield Prediction",
       type: "Research Proposal",
@@ -126,28 +148,6 @@ export const bookPortfolio = {
         "Savings",
         "Personal Finance",
         "Recommendations"
-      ]
-    },
-    {
-      id: 7,
-      title:
-        "A Decision Support System for Fleet Selection Using AHP, TOPSIS, and ELECTRE",
-      type: "Journal Article",
-      status: "Published",
-      medium: "Online",
-      year: "n.d.",
-      venue: "UGM FMIPA Publication",
-      authors: "Aina Musdholifah, Dimas Firmansyah",
-      affiliations:
-        "FMIPA UGM · Dept. of Computer Science & Electronics / MCS Program",
-      description:
-        "DSS for fleet assignment that integrates AHP for criteria weights, ELECTRE for alternative filtering, and TOPSIS for final ranking to reduce manual effort, improve recommendation accuracy, and optimize fleet utilization.",
-      keywords: [
-        "DSS",
-        "AHP",
-        "ELECTRE",
-        "TOPSIS",
-        "Fleet Management"
       ]
     }
   ] as BookPublication[]
