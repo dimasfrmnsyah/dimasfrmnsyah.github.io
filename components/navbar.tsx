@@ -8,6 +8,7 @@ import {
   useScroll
 } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import { whatsappHref } from "@/data/contact";
 import { navItems } from "@/data/navigation";
 import { useActiveSection } from "@/lib/hooks";
 import { cn } from "@/lib/utils";
@@ -98,7 +99,9 @@ export function Navbar() {
         <div className="flex items-center gap-3">
           <ThemeToggle />
           <a
-            href="#contact"
+            href={whatsappHref}
+            target="_blank"
+            rel="noreferrer"
             className="hidden items-center rounded-full border border-border/10 bg-panel/70 px-4 py-2 text-xs font-semibold uppercase tracking-widest text-foreground transition hover:border-cyan-400/50 hover:text-cyan-200 md:flex"
           >
             Let&apos;s Talk

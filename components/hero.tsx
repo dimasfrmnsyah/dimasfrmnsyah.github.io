@@ -3,7 +3,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { ArrowDown, BookOpen, Mail } from "lucide-react";
+import { ArrowDown, BookOpen, MessageCircle } from "lucide-react";
+import { whatsappHref } from "@/data/contact";
 import { heroHighlights, heroTechStack } from "@/data/hero";
 import { Container } from "@/components/container";
 import { fadeUp, staggerContainer } from "@/lib/motion";
@@ -71,11 +72,13 @@ export function Hero() {
             </motion.div>
             <motion.div whileHover={{ y: -2 }} whileTap={{ scale: 0.98 }}>
               <a
-                href="#contact"
+                href={whatsappHref}
+                target="_blank"
+                rel="noreferrer"
                 className="inline-flex items-center gap-2 rounded-full border border-border/10 bg-panel/70 px-6 py-3 text-sm font-semibold text-foreground transition hover:border-cyan-400/40"
               >
-                Contact Me
-                <Mail className="h-4 w-4" />
+                Chat on WhatsApp
+                <MessageCircle className="h-4 w-4" />
               </a>
             </motion.div>
           </motion.div>

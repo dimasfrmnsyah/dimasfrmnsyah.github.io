@@ -1,7 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Github, Linkedin, Mail, Phone, Twitter } from "lucide-react";
+import { Github, Linkedin, MessageCircle, Phone, Twitter } from "lucide-react";
+import { contactLocation, whatsappHref } from "@/data/contact";
 import { socials } from "@/data/socials";
 import { Section } from "@/components/section";
 import { SectionHeading } from "@/components/section-heading";
@@ -10,7 +11,6 @@ import { ContactForm } from "@/components/contact-form";
 import { fadeUp, staggerContainer } from "@/lib/motion";
 
 const iconMap = {
-  mail: Mail,
   linkedin: Linkedin,
   github: Github,
   twitter: Twitter,
@@ -24,7 +24,7 @@ export function Contact() {
         <SectionHeading
           eyebrow="Contact"
           title="Let's discuss your project needs."
-          description="Open for collaboration and system development. Share your requirements and I'll respond promptly."
+          description="Open for collaboration and system development. Send a WhatsApp message and I'll respond promptly."
         />
 
         <div className="grid gap-10 lg:grid-cols-[1fr_1.1fr]">
@@ -40,13 +40,23 @@ export function Contact() {
               className="rounded-3xl border border-border/10 bg-panel/70 p-6"
             >
               <p className="text-xs uppercase tracking-[0.3em] text-foreground/50">
-                Direct
+                WhatsApp
               </p>
-              <p className="mt-3 text-xl font-semibold text-foreground">
-                dimasfrmnsyh@gmail.com
+              <h3 className="mt-3 text-xl font-semibold text-foreground">
+                Chat directly for project inquiries
+              </h3>
+              <p className="mt-2 text-sm text-muted">
+                Fastest response via WhatsApp. Available from {contactLocation}.
               </p>
-              <p className="mt-2 text-sm text-muted">0894106932</p>
-              <p className="mt-2 text-sm text-muted">Bandung</p>
+              <a
+                href={whatsappHref}
+                target="_blank"
+                rel="noreferrer"
+                className="mt-5 inline-flex items-center gap-2 rounded-full border border-border/10 bg-panelStrong/70 px-5 py-3 text-xs font-semibold uppercase tracking-[0.2em] text-foreground transition hover:border-cyan-400/50 hover:text-cyan-200"
+              >
+                Chat on WhatsApp
+                <MessageCircle className="h-4 w-4" />
+              </a>
             </motion.div>
 
             <motion.div
@@ -58,7 +68,7 @@ export function Contact() {
               </p>
               <div className="mt-4 grid gap-3">
                 {socials.map((item) => {
-                  const Icon = iconMap[item.icon as keyof typeof iconMap] ?? Mail;
+                  const Icon = iconMap[item.icon as keyof typeof iconMap] ?? Phone;
                   return (
                     <a
                       key={item.label}
@@ -89,13 +99,13 @@ export function Contact() {
             className="rounded-3xl border border-border/10 bg-panel/70 p-6"
           >
             <p className="text-xs uppercase tracking-[0.3em] text-foreground/50">
-              Start a project
+              Start on WhatsApp
             </p>
             <h3 className="mt-3 text-xl font-semibold text-foreground">
-              Tell me about your goals
+              Share your project brief
             </h3>
             <p className="mt-2 text-sm text-muted">
-              Share the scope, timeline, and desired outcomes.
+              Write your scope, timeline, and goals, then continue directly in WhatsApp.
             </p>
             <div className="mt-6">
               <ContactForm />
